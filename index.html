@@ -185,6 +185,10 @@
             var canvas = document.getElementById("myCanvas");
             //get element by id
             //id 기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#ff0000";
+
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
         </script>
     </body>
 </html>
