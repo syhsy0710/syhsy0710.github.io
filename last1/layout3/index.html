@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>한서연의 인덱스 홈페이지 입니다.</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <style>
+        .short_line{
+            width: 25px;
+            border-top: solid 1px black;
+        }
+        #content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .content_card{
+            width: 310px;
+            background-color: white;
+            box-shadow: 2px 2px 2px gray;
+            margin: 20px;
+        }
+        .content_card h2{
+            margin-top: 0px;
+        }
+        .content_card>div:last-child{
+            padding: 50px;
+        }
+        .content_card>div:first-child{
+            position: relative /* 관계적인 */
+            /* relative인 부모는 absolute인 자식의 기준이 된다*/
+        }
+        .content_card img{
+            display: block;
+        }
+        .content_card>div:last-child>div:nth-child(2){
+            color: gray;
+        }
+        .category{
+            background-color: black;
+            color: white;
+            position: absolute;
+            /* 위치지정: 절대적인 */
+            left: 0px;
+            bottom: 0px;
+        }
+        .long_line{
+            border-top: dotted 1px gray;
+            margin: 10px 0px;
+        }
+        .content_card p{
+            margin: 0px;
+        }
+        </style>
+        <style>
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
+            header ul{}
+            #wrap>header>ul{}
+            header ul{
+                    list-style: none;
+                    display: flex;
+                    margin: 13px 0px;
+            }
+            header li{
+                    padding: 0px 30px;
+                    font-size: 16px;
+                    border-right: solid 1px gray;
+            }
+            header li:last-child{
+                border: none;
+            }
+            header li:last-child{
+                border: none;
+            }
+            header{
+                position: fixed;
+                display: flex;
+                justify-content: space-between;
+                background-color: #60b3a2;;
+                width: 99vw;
+                height: flex;
+                padding: 30px;
+            }
+            header h1{
+                margin: 0px;
+            }
+            header>div>img{
+                margin: 13px 0px;
+            }
+
+            #main_visual{
+                padding: 400px;
+                font-size: 40px;
+                color: white;
+                text-align: center;
+                background-size: 100px auto;
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+                background-size: contain; /* 담기도록 */
+                background-size: cover; /* 씌워지도록 */
+            }
+            </style>
+
+            
+
+    <style>
+        body{
+            color:rgb(255, 252, 228);
+            background-color: rgb(0, 0, 0);
+        }
+</style>
+        <div id="wrap">
+            <header>
+                <h1>SEOYEON.INDEX</h1>
+                <ul>
+                    <li><a href="index.html">INDEX</a></li>
+                    <li><a href="last.html">PORTFOLIO</a></li>
+                    <li><a href="layout1/layout1.html">LAYOUT1</a></li>
+                    <li><a href="layout2/layout2.html">LAYOUT2</a></li>
+                    <li><a href="layout3/layout3.html">LAYOUT3</a></li>
+                    <li><a href="html.html">HTML STUDY</a></li>
+                    <li><a href="css.html">CSS STUDY</a></li>
+                    <li><a href="sub.html">SHERLOCK</a></li>
+                </ul>
+                <div><img src=""></div>
+            </header>
+
+
+            <div id="content">
+                <section class="content_card">
+                    <div>
+                        <img width="310px" height="auto" src="20220409_225101.jpg" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div class>2023. 12. 02</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img width="310px" height="auto" src="20220409_225106.jpg" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div class>2023. 12. 02</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img width="310px" height="auto" src="20220409_225120.jpg" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div class>2023. 12. 02</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img width="310px" height="auto" src="20220409_225135.jpg" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div class>2023. 12. 02</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img width="310px" height="auto" src="20220409_225255.jpg" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div class>2023. 12. 02</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img width="310px" height="auto" src="20220409_225313.jpg" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div class>2023. 12. 02</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+
+
+    </body>
+</html>
